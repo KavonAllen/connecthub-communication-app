@@ -100,4 +100,5 @@ Storage belongs to the current browser and origin. It is not shared across devic
 
 
 ## Application Preview
-![ConnectHub Application] images/preview.png
+
+![ConnectHub Application](./images/preview.png)
