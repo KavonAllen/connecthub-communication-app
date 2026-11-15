@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ConnectHub is a modern team communication platform.">
+    <title>ConnectHub | Team Communication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header class="app-header" id="app-header">
+            <div class="brand" id="app-brand">
+                <span class="brand-logo" aria-hidden="true">CH</span>
+                <span class="brand-name">ConnectHub</span>
+            </div>
+
+            <div class="header-search" role="search">
+                <label for="message-search-input">Search messages</label>
+                <input
+                    class="search-input"
+                    id="message-search-input"
+                    name="search"
+                    type="search"
+                    placeholder="Search messages..."
+                >
+            </div>
+
+            <div class="profile-area" id="profile-area">
+                <button
+                    class="profile-button"
+                    id="profile-button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="profile-panel"
+                >
+                    <span class="profile-avatar" aria-hidden="true">AM</span>
+                    <span class="profile-name">Alex Morgan</span>
+                </button>
+                <div
+                    class="profile-panel"
+                    id="profile-panel"
+                    role="region"
+                    aria-labelledby="profile-panel-heading"
+                    hidden
+                >
+                    <h2 id="profile-panel-heading">Alex Morgan</h2>
+                    <p>ConnectHub demo profile</p>
+                    <p>Profile settings are not available in this version.</p>
+                </div>
+            </div>
+        </header>
+
+        <aside class="app-sidebar" id="app-sidebar" aria-label="Workspace sidebar">
+            <nav class="sidebar-navigation" aria-labelledby="navigation-heading">
+                <h2 id="navigation-heading">Navigation</h2>
+                <ul class="navigation-list">
+                    <li><button class="navigation-button" id="nav-home" data-view="home" type="button">Home</button></li>
+                    <li><button class="navigation-button" id="nav-direct-messages" data-view="direct-messages" type="button">Direct Messages</button></li>
+                    <li><button class="navigation-button" id="nav-saved-messages" data-view="saved-messages" type="button">Saved Messages</button></li>
+                </ul>
+            </nav>
+
+            <section class="sidebar-section channel-section" aria-labelledby="channels-heading">
+                <h2 id="channels-heading">Channels</h2>
+                <nav class="channel-navigation" aria-label="Channels">
+                    <ul class="channel-list">
+                        <li><button class="channel-button" id="channel-general" data-channel="general" type="button">General</button></li>
+                        <li><button class="channel-button" id="channel-announcements" data-channel="announcements" type="button">Announcements</button></li>
+                        <li><button class="channel-button" id="channel-development" data-channel="development" type="button">Development</button></li>
+                        <li><button class="channel-button" id="channel-random" data-channel="random" type="button">Random</button></li>
+                    </ul>
+                </nav>
+                <button class="add-channel-button" id="add-channel-button" type="button">+ Add Channel</button>
+            </section>
+        </aside>
+
+        <main class="chat-main" id="chat-main">
+            <section class="channel-view" id="channel-view" aria-labelledby="current-channel-title">
+                <header class="channel-header">
+                    <h2 class="channel-title" id="current-channel-title">General</h2>
+                    <p class="channel-description" id="channel-description">
+                        A place for the team to share updates and have general discussions.
+                    </p>
+                </header>
+
+                <ol class="message-feed" id="message-feed" role="log" aria-label="Messages in General" aria-relevant="additions">
+                    <li>
+                        <article class="chat-message" id="message-001" data-message-id="message-001">
+                            <header class="message-header">
+                                <h3 class="message-sender">Jordan Lee</h3>
+                                <time datetime="2026-11-15T09:15">9:15 AM</time>
+                            </header>
+                            <p class="message-content">Good morning, everyone! What are your priorities for today?</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="chat-message" id="message-002" data-message-id="message-002">
+                            <header class="message-header">
+                                <h3 class="message-sender">Priya Patel</h3>
+                                <time datetime="2026-11-15T09:18">9:18 AM</time>
+                            </header>
+                            <p class="message-content">I am wrapping up the dashboard updates and will share a preview soon.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="chat-message" id="message-003" data-message-id="message-003">
+                            <header class="message-header">
+                                <h3 class="message-sender">Marcus Chen</h3>
+                                <time datetime="2026-11-15T09:22">9:22 AM</time>
+                            </header>
+                            <p class="message-content">Thanks! I can review the preview once it is ready.</p>
+                        </article>
+                    </li>
+                </ol>
+
+                <form class="message-composer" id="message-form">
+                    <label for="message-input">Write a message</label>
+                    <input
+                        class="message-input"
+                        id="message-input"
+                        name="message"
+                        type="text"
+                        placeholder="Write a message..."
+                    >
+                    <button class="send-button" id="send-button" type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
