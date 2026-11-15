@@ -37,3 +37,14 @@ I would plan the channel and message data structures earlier, especially which d
 I would also decide what every visible navigation control should do before adding it to the interface. That could prevent buttons from appearing functional before their behavior is defined. Finally, I would make a small test checklist earlier and use it after each feature: send a message, switch channels, search, save and remove a message, refresh, and check narrow screen sizes. I did browser checks for message persistence and responsive layouts during this project; doing those checks throughout development would help catch issues sooner.
 
 Overall, Copilot helped me move through the project incrementally and understand unfamiliar concepts, but it did not make the decisions for me. I still needed to review the code, describe the behavior I wanted, test the result, and ask for focused changes when something did not match my expectations.
+
+## Copilot Collaboration Evidence
+
+The following screenshots document my use of Copilot throughout development:
+
+- Project planning and HTML structure
+- CSS design and responsive layout
+- JavaScript feature implementation
+- Channel creation and message search
+- Saved messages and code review
+- README and reflection generation

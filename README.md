@@ -97,3 +97,7 @@ Storage belongs to the current browser and origin. It is not shared across devic
 - Expand search to cover all channels and add sender/channel filters.
 - Add message editing, deletion, and richer attachment support.
 - Add automated tests for message sending, channel changes, search, storage, and responsive layouts.
+
+
+## Application Preview
+![alt text](preview.png)
